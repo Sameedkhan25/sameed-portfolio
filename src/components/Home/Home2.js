@@ -5,8 +5,8 @@ import dp from '../../Assets/pic.JPG';
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  // AiOutlineTwitter,
+  // AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -22,7 +22,7 @@ function Home2() {
             <p className="home-about-body">
             I have a huge passion for learning new things work in a competitive environment. I have expertise in working with remote jobs and can work with flexible hours with good efficiency
               <br />
-              <br />I am a Full-Stack Developer with most of my experience in 
+              <br />I am a frontend Developer with most of my experience in 
               <i>
                 <b className="purple">  Javascript ,React, Node, Express, MongoDB (MERN) </b>
               </i>
@@ -45,13 +45,15 @@ function Home2() {
                   <br />
                   nextjs, typescript , nodejs , express
                   <br />
+                  rest API, graphQl (query, mutation, subscription)
+                  <br />
                   strapi, graphCMS
                   <br />
                   react native 
                   <br/>
                   materialUi, tailwind , styled components, chakra ui
                   <br/>
-                  DB: mongoDB, mysql, firebase firestore & firebase realtiem DB
+                  DB: mongoDB, mongoDB atlas, mysql, firebase firestore & firebase realtiem DB
                   <br/>
                   DEVOPS: git, github, bitbucket, jira, aws EC2, aws S3, docker, jenkins
                 </b>
