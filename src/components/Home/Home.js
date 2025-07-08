@@ -21,11 +21,32 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                
-                <strong className="main-name"> SAMEED KHAN</strong>
+                I'm <strong className="main-name">MUHAMMAD SAMEED KHAN</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <h2 style={{ 
+                fontSize: "1.8em", 
+                paddingLeft: "50px", 
+                paddingTop: "20px",
+                color: "#c770f0",
+                fontWeight: "600"
+              }}>
+                Full-Stack Developer | MERN + Next.js Expert
+              </h2>
+
+              <p style={{ 
+                fontSize: "1.2em", 
+                paddingLeft: "50px", 
+                paddingTop: "15px",
+                color: "rgba(255, 255, 255, 0.8)",
+                lineHeight: "1.6"
+              }}>
+                3+ years of experience building scalable web applications.
+                <br />
+                Specialized in React, Next.js, Node.js, and modern web technologies.
+              </p>
+
+              <div style={{ padding: "30px 50px", textAlign: "left" }}>
                 <Type />
               </div>
             </Col>

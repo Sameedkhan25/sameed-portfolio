@@ -1,12 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import myImg from "../../Assets/avatar.svg";
 import dp from '../../Assets/pic.JPG';
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  // AiOutlineTwitter,
-  // AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -14,116 +11,144 @@ function Home2() {
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
-        <Row>
+        <Row className="align-items-center">
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              <span className="purple"> About Myself </span> 
-            </h1>
-            <p className="home-about-body">
-            I have a huge passion for learning new things work in a competitive environment. I have expertise in working with remote jobs and can work with flexible hours with good efficiency
-              <br />
-              <br />I am a frontend Developer with most of my experience in 
-              <i>
-                <b className="purple">  Javascript ,React, Node, Express, MongoDB (MERN) </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> 
-                {/* also in areas related to{" "} */}
-             
-              </i>
-              <br />
-              <br />
-              I have worked with several Technologies such as:
-               
-              <i>
-                <b className="purple">
-                  {" "}
-                  html, css, sass, bootstrap , jquery
-                  <br />
-                  nextjs, typescript , nodejs , express
-                  <br />
-                  rest API, graphQl (query, mutation, subscription)
-                  <br />
-                  strapi, graphCMS
-                  <br />
-                  react native 
-                  <br/>
-                  materialUi, tailwind , styled components, chakra ui
-                  <br/>
-                  DB: mongoDB, mongoDB atlas, mysql, firebase firestore & firebase realtiem DB
-                  <br/>
-                  DEVOPS: git, github, bitbucket, jira, aws EC2, aws S3, docker, jenkins
-                </b>
-              </i>
-           
-            </p>
+            <div className="about-content-modern">
+              <h1 className="about-heading-modern">
+                <span className="gradient-text">Why Choose Me?</span> 
+              </h1>
+              
+              <div className="value-proposition">
+                <p className="intro-text">
+                  I'm passionate about creating <span className="highlight">scalable web solutions</span> that drive business growth.
+                  With expertise in modern technologies and a proven track record of delivering results.
+                </p>
+                
+                <div className="achievements-grid">
+                  <div className="achievement-card">
+                    <div className="achievement-icon">🚀</div>
+                    <div className="achievement-content">
+                      <h4>Revenue Growth</h4>
+                      <p>Increased client revenue by <span className="highlight">25-90%</span> through A/B testing optimizations</p>
+                    </div>
+                  </div>
+                  
+                  <div className="achievement-card">
+                    <div className="achievement-icon">👥</div>
+                    <div className="achievement-content">
+                      <h4>User Impact</h4>
+                      <p>Built responsive applications serving <span className="highlight">thousands of users</span></p>
+                    </div>
+                  </div>
+                  
+                  <div className="achievement-card">
+                    <div className="achievement-icon">⚡</div>
+                    <div className="achievement-content">
+                      <h4>Efficiency</h4>
+                      <p>Developed reusable UI components improving <span className="highlight">development efficiency</span></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="expertise-section">
+                  <h3 className="section-title">💻 Technical Expertise</h3>
+                  <p className="expertise-text">
+                    I specialize in <span className="highlight">MERN Stack Development</span> with proficiency in:
+                  </p>
+                  <div className="tech-list">
+                    <span className="tech-item">React.js</span>
+                    <span className="tech-item">Next.js</span>
+                    <span className="tech-item">Node.js</span>
+                    <span className="tech-item">Express.js</span>
+                    <span className="tech-item">MongoDB</span>
+                    <span className="tech-item">TypeScript</span>
+                    <span className="tech-item">GraphQL</span>
+                  </div>
+                </div>
+                
+                <div className="what-i-bring">
+                  <h3 className="section-title">🎯 What I Bring</h3>
+                  <div className="benefits-list">
+                    <div className="benefit-item">
+                      <span className="benefit-icon">🌍</span>
+                      <span><span className="highlight">Remote work expertise</span> with flexible hours</span>
+                    </div>
+                    <div className="benefit-item">
+                      <span className="benefit-icon">🤝</span>
+                      <span><span className="highlight">Cross-functional collaboration</span> with product teams</span>
+                    </div>
+                    <div className="benefit-item">
+                      <span className="benefit-icon">⚡</span>
+                      <span><span className="highlight">Agile development</span> and sprint planning experience</span>
+                    </div>
+                    <div className="benefit-item">
+                      <span className="benefit-icon">🔧</span>
+                      <span><span className="highlight">Performance optimization</span> and scalable architecture</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="cta-section">
+                  <p className="cta-text">Ready to build something amazing together? Let's connect!</p>
+                </div>
+              </div>
+            </div>
           </Col>
+          
           <Col md={4} className="myAvtar">
-            <Tilt>
-              {/* <img src={myImg} className="img-fluid" alt="avatar" /> */}
-              <img 
-              style={{width: '50%', height: '50%' , borderRadius: '20%'}}
-              src={dp} className="img-fluid" alt="avatar" /> 
-            </Tilt>
+            <div className="avatar-container">
+              <Tilt
+                tiltMaxAngleX={15}
+                tiltMaxAngleY={15}
+                perspective={1000}
+                scale={1.05}
+                transitionSpeed={2000}
+                gyroscope={true}
+              >
+                <div className="avatar-wrapper">
+                  <img src={dp} className="avatar-image" alt="Muhammad Sameed Khan" />
+                  <div className="avatar-glow"></div>
+                </div>
+              </Tilt>
+            </div>
           </Col>
         </Row>
+        
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
-            </p>
-            <ul className="home-about-social-links">
-            <li className="social-icons">
+            <div className="social-section">
+              <h2 className="social-heading">Let's Connect</h2>
+              <p className="social-text">
+                Feel free to <span className="highlight">connect</span> with me on social platforms
+              </p>
+              <div className="social-links-container">
                 <a
-                  href="https://www.linkedin.com/in/sameed-khan-717a8b109/"
+                  href="https://github.com/msameedkhan25"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              
-              <li className="social-icons">
-                <a
-                  href="https://github.com/Sameedkhan25"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="social-link"
+                  aria-label="GitHub Profile"
                 >
                   <AiFillGithub />
+                  <span>GitHub</span>
                 </a>
-              </li>
-              {/* <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.linkedin.com/in/msameedkhan25/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="social-link"
+                  aria-label="LinkedIn Profile"
                 >
-                  <AiOutlineTwitter />
+                  <FaLinkedinIn />
+                  <span>LinkedIn</span>
                 </a>
-              </li> */}
-           
-              {/* <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/s.o.u.m.y.a_j.i.t/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li> */}
-            </ul>
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
     </Container>
   );
 }
+
 export default Home2;

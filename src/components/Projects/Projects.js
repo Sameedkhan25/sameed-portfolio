@@ -38,8 +38,8 @@ function Projects() {
               imgPath={HeaderBidding}
               isBlog={false}
               title="Pubguru (Header bidding and reporting platform)"
-              techUsed={['React','Javascript','prebidjs','kibana' ]}
-              description="Pubguru is a header bidding and reporting platform for publishers. It is a web application that allows publishers to manage their campaigns and report on their performance. I am working mostly on the header bidding side, making our algorithm more efficient and adding new features to the application that are helful to publishers. "
+              techUsed={['React','Next.js','Javascript','prebidjs','kibana' ]}
+              description="Pubguru is a header bidding and reporting platform for publishers. Built with React and Next.js for optimal performance. It is a web application that allows publishers to manage their campaigns and report on their performance. I am working mostly on the header bidding side, making our algorithm more efficient and adding new features to the application that are helpful to publishers."
               link="https://www.monetizemore.com/solutions/pubguru/"
             />
             </a>
@@ -50,9 +50,8 @@ function Projects() {
               imgPath={Go}
               isBlog={false}
               title="Go (cloud based EHR platform)"
-              techUsed={['React','Typescript','firebase','redux','graphql','context-api','storybook','css', 'styled components' ]}
-              description="Worked as a React Engineer on a GO project. Involved in the development of delivering the next generation of healthcare EHR and practice management software. Work alongside product team to comprehend or implement new features, and improve an existing product.responsible for the front-end side of data-intensive application Carecloud GO handling millions of medical records, and have contributed to understanding product requirements and delivering features efficiently.
-              Technology Used:"
+              techUsed={['React','Next.js','Typescript','firebase','redux','graphql','context-api','storybook','css', 'styled components' ]}
+              description="Worked as a React Engineer on a GO project. Involved in the development of delivering the next generation of healthcare EHR and practice management software using React and Next.js. Work alongside product team to comprehend or implement new features, and improve an existing product. Responsible for the front-end side of data-intensive application Carecloud GO handling millions of medical records, and have contributed to understanding product requirements and delivering features efficiently."
               link="https://www.carecloud.com/go/features/"
             />
             </a>
@@ -100,9 +99,9 @@ function Projects() {
               imgPath={careerdev}
               isBlog={false}
               isLink={false}
-              techUsed={['React','context-api','material ui', 'Rest api' ]}
+              techUsed={['React','Next.js','context-api','material ui', 'Rest api' ]}
               title="CareerDev (job/courses/funding search platform)"
-              description='Job searching platform for employers and job seekers. the web app fetches recent jobs in the UK from different apis and displays them in a clean and easy to use UI. the app also provides information regarding courses and funding opportunities'
+              description='Job searching platform for employers and job seekers built with React and Next.js. The web app fetches recent jobs in the UK from different APIs and displays them in a clean and easy to use UI. The app also provides information regarding courses and funding opportunities with server-side rendering for better SEO.'
             />
           </Col>
           <Col md={6} className="project-card">

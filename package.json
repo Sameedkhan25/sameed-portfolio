@@ -1,7 +1,10 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
+  "name": "sameed-portfolio",
+  "version": "2.0.0",
   "private": true,
+  "description": "Portfolio website of Muhammad Sameed Khan - Full-Stack Developer",
+  "author": "Muhammad Sameed Khan",
+  "homepage": "https://msameedkhan.vercel.app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -45,5 +48,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "full-stack",
+    "mern-stack",
+    "developer",
+    "muhammad-sameed-khan"
+  ]
 }
