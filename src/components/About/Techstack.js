@@ -1,6 +1,4 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
@@ -9,7 +7,6 @@ import {
   DiPython,
   DiGit,
   DiAws,
-  DiBitbucket,
   DiNginx,
 } from "react-icons/di";
 import {
@@ -32,8 +29,6 @@ import {
   SiEslint,
   SiPrettier,
   SiVisualstudiocode,
-  SiPostman,
-  SiFigma,
   SiVercel,
   SiNetlify,
   SiSwagger,
@@ -72,20 +67,23 @@ function Techstack() {
     { icon: <DiAws />, name: "AWS", color: "#FF9900" },
   ];
 
-  const toolsTechs = [
-    { icon: <DiGit />, name: "Git", color: "#F05032" },
+  const devOpsTechs = [
     { icon: <SiDocker />, name: "Docker", color: "#2496ED" },
-    { icon: <SiJest />, name: "Jest", color: "#C21325" },
-    { icon: <SiVite />, name: "Vite", color: "#646CFF" },
-    { icon: <SiWebpack />, name: "Webpack", color: "#8DD6F9" },
-    { icon: <SiEslint />, name: "ESLint", color: "#4B32C3" },
-    { icon: <SiPrettier />, name: "Prettier", color: "#F7B93E" },
-    { icon: <SiVisualstudiocode />, name: "VS Code", color: "#007ACC" },
+    { icon: <DiGit />, name: "Git", color: "#F05032" },
+    { icon: <DiNginx />, name: "Nginx", color: "#269539" },
     { icon: <SiVercel />, name: "Vercel", color: "#000000" },
     { icon: <SiNetlify />, name: "Netlify", color: "#00C7B7" },
-    { icon: <SiSwagger />, name: "Swagger", color: "#85EA2D" },
-    { icon: <DiNginx />, name: "Nginx", color: "#009639" },
     { icon: <SiTerraform />, name: "Terraform", color: "#7B42BC" },
+  ];
+
+  const toolsTechs = [
+    { icon: <SiVisualstudiocode />, name: "VS Code", color: "#007ACC" },
+    { icon: <SiJest />, name: "Jest", color: "#C21325" },
+    { icon: <SiWebpack />, name: "Webpack", color: "#8DD6F9" },
+    { icon: <SiVite />, name: "Vite", color: "#646CFF" },
+    { icon: <SiEslint />, name: "ESLint", color: "#4B32C3" },
+    { icon: <SiPrettier />, name: "Prettier", color: "#F7B93E" },
+    { icon: <SiSwagger />, name: "Swagger", color: "#85EA2D" },
     { icon: <SiJira />, name: "Jira", color: "#0052CC" },
     { icon: <SiSlack />, name: "Slack", color: "#4A154B" },
     { icon: <SiInsomnia />, name: "Insomnia", color: "#4000BF" },
@@ -115,28 +113,30 @@ function Techstack() {
   );
 
   return (
-    <div className="techstack-container">
+    <div className="tech-container">
       <TechSection 
         title="Frontend" 
-        subtitle="Technologies" 
+        subtitle="Technologies"
         techs={frontendTechs} 
       />
-      
       <TechSection 
         title="Backend" 
-        subtitle="Technologies" 
+        subtitle="Technologies"
         techs={backendTechs} 
       />
-      
       <TechSection 
-        title="Database" 
-        subtitle="& Cloud" 
+        title="Database &" 
+        subtitle="Cloud"
         techs={databaseTechs} 
       />
-      
       <TechSection 
-        title="Development Tools" 
-        subtitle="& Deployment" 
+        title="DevOps &" 
+        subtitle="Deployment"
+        techs={devOpsTechs} 
+      />
+      <TechSection 
+        title="Development" 
+        subtitle="Tools"
         techs={toolsTechs} 
       />
     </div>
