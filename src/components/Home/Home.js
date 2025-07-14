@@ -41,7 +41,7 @@ function Home() {
                 color: "rgba(255, 255, 255, 0.8)",
                 lineHeight: "1.6"
               }}>
-                3+ years of experience building scalable web applications.
+                4+ years of experience building scalable web applications.
                 <br />
                 Specialized in React, Next.js, Node.js, and modern web technologies.
               </p>
