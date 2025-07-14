@@ -123,7 +123,7 @@ function Home2() {
               </p>
               <div className="social-links-container">
                 <a
-                  href="https://github.com/msameedkhan25"
+                  href="https://github.com/Sameedkhan25"
                   target="_blank"
                   rel="noreferrer"
                   className="social-link"
